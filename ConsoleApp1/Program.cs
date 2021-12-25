@@ -33,7 +33,9 @@ namespace ConsoleApp1
             //Breaking_the_Records obj = new Breaking_the_Records();
 
 
-            Subarray_Division obj = new Subarray_Division();
+            //Subarray_Division obj = new Subarray_Division();
+
+            Divisible_Sum_Pairs obj = new Divisible_Sum_Pairs();
 
             Console.ReadKey();
         }
