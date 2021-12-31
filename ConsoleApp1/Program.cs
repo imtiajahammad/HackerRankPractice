@@ -35,7 +35,9 @@ namespace ConsoleApp1
 
             //Subarray_Division obj = new Subarray_Division();
 
-            Divisible_Sum_Pairs obj = new Divisible_Sum_Pairs();
+            //Divisible_Sum_Pairs obj = new Divisible_Sum_Pairs();
+
+            Migratory_Birds obj=new Migratory_Birds();
 
             Console.ReadKey();
         }
