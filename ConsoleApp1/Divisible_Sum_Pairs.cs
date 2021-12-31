@@ -14,11 +14,29 @@ namespace ProblemSolvings
         /// </summary>
         public Divisible_Sum_Pairs()
         {
+            int k=5;
+            List<int> list=new List<int>{
+                1,2,3,4,5,6
+            };
+            //int res=divisibleSumPairs(list.Count,k,list);
+            int res=divisibleSumPairs(6,3,new List<int>{1,3,2,6,1,2});
 
+            Console.WriteLine("result is {0}",res);
         }
         public static int divisibleSumPairs(int n, int k, List<int> ar)
         {
-            return 0;
+            int countSets=0;
+            int[] arr=ar.ToArray();
+            for(int i=0;i<arr.Length-1;i++){
+                Console.WriteLine(arr[i]);
+                for(int j=i+1;j<arr.Length;j++){
+                    if(i<j && ( (arr[i]+arr[j]) % k )==0 ){
+                        countSets++;
+                    }
+                }
+
+            }
+            return countSets;
         }
 
     }
